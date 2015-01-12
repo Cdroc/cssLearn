@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>双竖线菜单</title>
+		<style type="text/css">
+			#menu{
+				width: 120px;
+				background: #ccc;
+				font-family: Arial;
+				font-size: 14px;
+				padding: 8px;
+				margin: 0 auto;			/*水平居中*/
+			}
+			#menu a, #menu a:visited{
+				height: 1em;
+				display: block;
+				background-color: #fff;
+				padding: 4px 8px;
+				color: #000;
+				text-decoration: none;
+				margin: 8px 0;
+				border-left: 8px solid #9ab;
+				border-right: 8px solid #9ab;
+				/*
+				border-top: 8px solid #aaa;
+				border-bottom: 8px solid #aaa;
+				*/
+			}
+			#menu a:hover{
+				color: #f00;
+				border-left: 8px solid #000;
+				border-right: 8px solid #000;
+				/*
+				border-top: 8px solid #a0a;
+				border-bottom: 8px solid #a0a;
+				*/
+			}
+			#menu a#first, #menu a#last{
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+			<a href="#" id="first"> Home </a>
+			<a href="#"> Contact Us </a>
+			<a href="#"> Web Dev </a>
+			<a href="#"> Web Design </a>
+			<a href="#" id="last"> Map </a>
+		</div>
+	</body>
+</html>

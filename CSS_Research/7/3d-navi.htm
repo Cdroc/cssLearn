@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>双竖线菜单</title>
+		<style type="text/css">
+			#menu{
+				font-family: Arial;
+				font-size: 14px;
+			}
+			#menu a, #menu a:visited{
+				text-decoration: none;
+				text-align: center;
+				color: #fff;
+
+				display: block;
+				width: 10em;
+				padding: 0.25em;
+				margin: 0.5em auto;			/*菜单项之间间隔0.5em，并水平居中*/
+				background-color: #8ab;
+
+				border: 2px solid #fff;
+				border-color: #def #678 #345 #cde;	/*边框颜色显示凸起效果*/
+
+				position: relative;
+			}
+			#menu a:hover{
+				top: 2px;
+				left: 2px;
+				border-color: #345 #cde #def #678;	/*边框颜色显示凹陷效果*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+			<a href="#" id="first"> Home </a>
+			<a href="#"> Contact Us </a>
+			<a href="#"> Web Dev </a>
+			<a href="#"> Web Design </a>
+			<a href="#" id="last"> Map </a>
+		</div>
+	</body>
+</html>
