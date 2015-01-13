@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>奖牌榜</title>
+		<style type="text/css">
+			table{
+				color: #565;
+				font: 12px Arial;
+			}
+			td{
+				border-bottom: 2px solid #b3de94;
+				border-top: 3px solid #fff;
+				padding: 9px;
+			}
+			tr{
+				background-color: #dfc;
+			}
+			tr:hover, tr.hover{
+				background-color: #595;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<table summary="book list">
+			<caption>Book List</caption>
+				<tr>
+					<td>Title</td> 
+					<td>ID</td> 
+					<td>Country</td> 
+					<td>Price</td> 
+					<td>Download</td>
+				</tr>
+				<tr>
+					<td>Tom</td> 
+					<td>1213456</td> 
+					<td>Germany</td> 
+					<td>$3.12</td> 
+					<td>Download</td>
+				</tr>
+				<tr class="even">
+					<td>Chance</td> 
+					<td>1213457</td> 
+					<td>Germany</td> 
+					<td>$123.34</td> 
+					<td>Download</td>
+				</tr>
+				<tr>
+					<td>John</td> 
+					<td>1213458</td> 
+					<td>Germany</td> 
+					<td>$34.37</td> 
+					<td>Download</td>
+				</tr>
+				<tr class="even">
+					<td>aKathleen</td> 
+					<td>1213459</td> 
+					<td>Germany</td> 
+					<td>$23.67</td> 
+					<td>Download</td>
+				</tr>
+		</table>
+		<script type="text/javascript">
+		var rows = document.getElementsByTagName('tr');
+		for (var i = 0; i < rows.length; ++i) {
+			rows[i].onmouseover = function(){
+				this.className = 'hover';
+			}
+			rows[i].onmouseout = function(){
+				this.className = '';
+			}
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<style type="text/css">
+			.month{
+				border-collapse: collapse;
+				table-layout: fixed;
+				width: 780px;
+			}
+			.month caption{
+				text-align: left;
+				font-family: normal 120% 宋体, arial;
+				font-size: 12px;
+				font-weight: normal;
+				padding-bottom: 6px;
+			}
+			.month caption .date{
+				font-size: 150%;
+				font-weight: bold;
+			}
+			.month th{
+				border: 1px solid #999;
+				border-bottom: none;
+				padding: 3px 2px 2px;
+				margin: 0;
+				background-color: #add;
+				color: #333;
+				font: 80% 宋体;
+			}
+			.month td{
+				border: 1px solid #aaa;
+				font: 12px 宋体;
+				line-height: 16px;
+				padding: 2px;
+				margin: 0;
+				vertical-align: top;
+			}
+			.month td.previous, .month td.next{
+				background-color: #eee;
+				color: #a6a6a6;
+			}
+			.month td.active{
+				background-color: #b1cbe1;
+				border: 2px solid #4682b4;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="month" summary="Calendar for 2007.10">
+			<caption>
+				<span class="date">2007年10月</span>
+				<a href="calendar-small.html">小模式</a> | <a>中模式</a> | <a href="calendar-large.html">大模式</a>
+			</caption>
+			<tr>
+				<th scope="col"><span>星期</span>一</th>
+				<th scope="col"><span>星期</span>二</th>
+				<th scope="col"><span>星期</span>三</th>
+				<th scope="col"><span>星期</span>四</th>
+				<th scope="col"><span>星期</span>五</th>
+				<th scope="col"><span>星期</span>六</th>
+				<th scope="col"><span>星期</span>日</th>
+			</tr>
+			<!--*****************一*****************-->
+			<tr>
+				<td class="previous">31</td>
+				<td>1</td>
+				<td class="active">2
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+						<li>查JS相关资料</li>
+					</ul>
+				</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<!--*****************二*****************-->
+			<tr>
+				<td class="active">7
+					<ul>
+						<li class="important">查JS相关资料</li>
+					</ul>
+				</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td class="active">13
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+						<li>查JS相关资料</li>
+					</ul>
+				</td>
+			</tr>
+			<!--*****************三*****************-->
+			<tr>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td class="active">17
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+					</ul>
+				</td>
+				<td class="active">18
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+						<li>查JS相关资料</li>
+					</ul>
+				</td>
+				<td>19</td>
+				<td>20</td>
+			</tr>
+			<!--*****************四*****************-->
+			<tr>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td class="active">26
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+					</ul>
+				</td>
+				<td class="active">27
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+						<li>查JS相关资料</li>
+					</ul>
+				</td>
+			</tr>
+			<!--*****************五*****************-->
+			<tr>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td class="active">31
+					<ul>
+						<li class="important">完成书稿第二部分</li>
+						<li>查JS相关资料</li>
+					</ul>
+				</td>
+				<td class="next">1</td>
+				<td class="next">2</td>
+				<td class="next">3</td>
+			</tr>
+		</table>
+	</body>
+</html>
