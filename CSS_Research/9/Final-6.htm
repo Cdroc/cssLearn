@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<style type="text/css">
+			#menu{
+				margin: 0;
+				padding: 0;
+				width: 610px;
+				list-style-type: none;
+				font: 14px Arial;
+			}
+			#menu li{
+				float: left;
+				width: 150;
+				padding: 0;
+				margin: 0 1px 0 0;
+			}
+			#menu li dl{
+				width: 150px; /*IE6*/
+				margin: 0;
+				padding: 0 0 10px 0;
+				background: #cb6 url(bottom.gif) no-repeat bottom left;
+			}
+			#menu li dt{
+				margin: 0;
+				padding: 5px;
+				text-align: center;
+				border-bottom: 1px solid #b00;
+			}
+			#menu li dt a, #menu li dt a:visited{
+				display: block;
+				color: #333;
+				text-decoration: none;
+			}
+			#menu li dd{
+				margin: 0;
+				padding: 0;
+				color: #fff;
+				background: #47a;
+			}
+			#menu li dd.last{
+				border-bottom: 1px solid #b00;
+			}
+			#menu li dd a, #menu li dd a:visited{
+				display: block;
+				color: #fff;
+				text-decoration: none;
+				padding: 4px 5px 4px 20px;
+				background: #47a url(arrow.gif) no-repeat 10px 10px;
+				height: 1em; /*IE6*/
+			}
+			#menu li dd{
+				display: none;
+			}
+			/*IE6*/
+			#menu li:hover dd, #menu li a:hover dd{
+				display: block;
+			}
+			/*IE6*/
+			#menu li:hover, #menu li a:hover{
+				border: 0;
+			}
+			#menu li dd a:hover{
+				background: #147;
+				color: #9cf;
+			}
+			#menu li dt.orange{
+				background: #fa5;/* url(top.gif) no-repeat top left*/
+			}
+			#menu li dt.yellow{
+				background: #ee5;/* url(top.gif) no-repeat top left*/
+			}
+			/*针对IE6的设置*/
+			#menu table{
+				border-collapse: collapse;
+				padding: 0;
+				margin: -1px;
+				font-size: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="menu">
+			<li>
+				<a href="#nogo"><table><tr><td>
+					<dl>
+						<dt class="orange"><a href="#">Artech Studio</a></dt>
+						<dd><a href="#">Web Dev</a></dd>
+						<dd><a href="#">Web Design</a></dd>
+						<dd><a href="#">Books</a></dd>
+						<dd class="last"><a href="#">Contact Us</a></dd>
+					</dl>
+				</td></tr></table></a>
+			</li>
+			<li>
+				<a href="#nogo"><table><tr><td>
+					<dl>
+						<dt class="yellow"><a href="#">Artech Store</a></dt>
+						<dd><a href="#">Books</a></dd>
+						<dd><a href="#">DVDs</a></dd>
+						<dd><a href="#">Movies</a></dd>
+						<dd class="last"><a href="#">Service</a></dd>
+					</dl>
+				</td></tr></table></a>
+			</li>
+		</ul>
+	</body>
+</html>
