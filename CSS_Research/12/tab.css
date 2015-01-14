@@ -1,0 +1,57 @@
+body{
+    margin: 10px;
+}
+#content{
+    border-left: 1px solid #11a3ff;
+    border-right: 1px solid #11a3ff;
+    border-bottom: 1px solid #11a3ff;
+    padding: 5px;
+    font-size: 12px;
+}
+ul#tabnav{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #11a3ff;
+    font: bold 12px verdana, arial;
+}
+ul#tabnav li{
+    float: left;
+    height: 22px;
+    background-color: #a3dbff;
+    margin: 0px 3px 0px 0px;
+    border: 1px solid #11a3ff;
+}
+ul#tabnav a:link, ul#tabnav a:visited{
+    display: block;
+    color: #006eb3;
+    text-decoration: none;
+    padding: 5px 10px 3px 10px;
+}
+ul#tabnav a:hover{
+    background-color: #006eb3;
+    color: #fff;
+}
+body#home li.home,
+body#dev li.dev,
+body#design li.design,
+body#map li.map{
+    border-bottom: 1px solid #fff; /*下边框白色，覆盖<ul>中蓝色下边框*/
+    color: #000;
+    background-color: #fff;
+}
+body#home li.home a:link, body#home li.home a:visited,
+body#dev li.dev a:link, body#dev li.dev a:visited,
+body#design li.design a:link, body#design li.design a:visited,
+body#map li.map a:link, body#map li.map a:visited{
+    color: #000;
+    background-color: #fff;
+}
+body#home li.home a:hover,
+body#dev li.dev a:hover,
+body#design li.design a:hover,
+body#map li.map a:hover{
+    color: #006eb3;
+    text-decoration: underline;
+}
