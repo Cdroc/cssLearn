@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>5背景图可变宽圆角框</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			body{
+				background: #ff9;
+				font: 12px/1.5 arial
+			}
+			.rounded{
+				background: url(left-top-step.gif) top left no-repeat;
+				width: 90%;
+			}
+			.rounded h3{
+				background: url(right-top-step.gif) top right no-repeat;
+			}
+			.rounded .main{
+				background: url(right-step.gif) top right repeat-y;
+			}
+			.rounded .footer{
+				background: url(left-bottom-step.gif) bottom left no-repeat;
+			}
+			.rounded .footer p{
+				background: url(right-bottom-step.gif) bottom right no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="rounded">
+			<h3>Article header</h3>
+			<div class="main">
+				<p>
+					这是一行文本，这里作为样例，四暗示在圆角框。<br/>
+					这是一行文本，这里作为样例，四暗示在圆角框。
+				</p>
+				<p>
+					这是一行文本，这里作为样例，四暗示在圆角框。<br/>
+					这是一行文本，这里作为样例，四暗示在圆角框。
+				</p>
+			</div>
+			<div class="footer">
+				<p>
+					这是版权信息文字。
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
