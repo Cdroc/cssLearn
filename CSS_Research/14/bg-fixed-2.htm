@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>单列布局</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            body{
+                font: 13px/1.5 arial;
+                margin: 0;
+            }
+
+            /*水平居中*/
+            #header, #pagefooter{
+                background: #9cf;
+                width: 760px;
+                margin: 0 auto;
+            }
+
+            #content img{
+                float: right;
+            }
+
+            /*绝对定位法*/
+            #container{
+                position: relative;
+                width: 760px;
+                margin: 0 auto;
+                background: url(bg-760.gif) repeat-y;
+            }
+            #navi{
+                width: 200px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #content{
+                margin-right: 200px;
+                margin-left: 200px;
+            }
+            #side{
+                width: 200px;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="rounded">
+                <h2>Page Header</h2>
+                <div class="main">
+                    <p>
+                        这是一行文本，这里作为样例，显示在布局框中。<br/>
+                        这是一行文本，这里作为样例，显示在布局框中。
+                    </p>
+                </div>
+                <div class="footer">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="navi">
+                <div class="rounded">
+                    <h2>Navi</h2>
+                    <div class="main">
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="rounded">
+                    <h2>Page Content</h2>
+                    <div class="main">
+                        <img src="cup.gif" />
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div id="side">
+                <div class="rounded">
+                    <h2>Side Bar</h2>
+                    <div class="main">
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pagefooter">
+            <div class="rounded">
+                <h2>Page Footer</h2>
+                <div class="main">
+                    <p>
+                        这是一行文本，这里作为样例，显示在布局框中。
+                    </p>
+                </div>
+                <div class="footer">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
