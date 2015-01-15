@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>单列布局</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            body{
+                background: #fff;
+                font: 13px/1.5 arial;
+                margin: 0;
+                padding: 0;
+            }
+
+            /*圆角设置*/
+            .rounded{
+                background: url(left-top.gif) top left no-repeat;
+                width: 100%;
+            }
+            .rounded h2{
+                background: url(right-top.gif) top right no-repeat;
+                padding: 20px 20px 10px;
+                margin: 0;
+            }
+            .rounded .main{
+                background: url(right.gif) top right repeat-y;
+                padding: 10px 20px;
+                margin: -2em 0 0;
+            }
+            .rounded .footer{
+                background: url(left-bottom.gif) bottom left no-repeat;
+            }
+            .rounded .footer p{
+                color: #888;
+                text-align: right;
+                background: url(right-bottom.gif) bottom right no-repeat;
+                display: block;
+                padding: 10px 20px 20px;
+                margin: -2em 0 0;
+            }
+
+            /*水平居中*/
+            #header, #pagefooter, #container{
+                max-width: 800px;
+                min-width: 600px;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            #content img{
+                float: right;
+            }
+
+            /*浮动定位法*/
+            #content{
+                float: left;
+                width: 600px;
+            }
+            #col-a, #col-b{
+                float: left;
+                width: 50%;
+            }
+            #banner{
+                clear: both;
+            }
+            .side{
+                float: left;
+                width: 200px;
+            }
+            #pagefooter{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="rounded">
+                <h2>Page Header</h2>
+                <div class="main">
+                    <p>
+                        这是一行文本，这里作为样例，显示在布局框中。<br/>
+                        这是一行文本，这里作为样例，显示在布局框中。
+                    </p>
+                </div>
+                <div class="footer">
+                    <p></p>
+                </div>
+            </div>
+        </div><!--header-->
+        <div id="container">
+            <div id="content">
+                <div id="columns">
+                    <div id="col-a">
+                        <div class="rounded">
+                            <h2>Col-a</h2>
+                            <div class="main">
+                                <img src="cup.gif" />
+                                <p>
+                                    这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。
+                                </p>
+                            </div>
+                            <div class="footer">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--col-a-->
+                    <div id="col-b">
+                        <div class="rounded">
+                            <h2>Col-b</h2>
+                            <div class="main">
+                                <img src="cup.gif" />
+                                <p>
+                                    这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。
+                                </p>
+                            </div>
+                            <div class="footer">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--col-b-->
+                </div><!--columns-->
+                <div id="banner">
+                    <div class="rounded">
+                        <h2>Banner</h2>
+                        <div class="main">
+                            <img src="cup.gif" />
+                            <p>
+                                这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。这是一行文本，这里作为样例，显示在布局框中。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <p></p>
+                        </div>
+                    </div>
+                </div><!--banner-->
+            </div><!--content-->
+            <div class="side">
+                <div class="rounded">
+                    <h2>Side Bar</h2>
+                    <div class="main">
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <p></p>
+                    </div>
+                </div>
+            </div><!--side-->
+            <div class="side">
+                <div class="rounded">
+                    <h2>Side Bar</h2>
+                    <div class="main">
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <p></p>
+                    </div>
+                </div>
+            </div><!--side-->
+            <div class="side">
+                <div class="rounded">
+                    <h2>Side Bar</h2>
+                    <div class="main">
+                        <p>
+                            这是一行文本，这里作为样例，显示在布局框中。<br/>
+                            这是一行文本，这里作为样例，显示在布局框中。
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <p></p>
+                    </div>
+                </div>
+            </div><!--side-->
+        </div><!--container-->
+        <div id="pagefooter">
+            <div class="rounded">
+                <h2>Page Footer</h2>
+                <div class="main">
+                    <p>
+                        这是一行文本，这里作为样例，显示在布局框中。
+                    </p>
+                </div>
+                <div class="footer">
+                    <p></p>
+                </div>
+            </div>
+        </div><!--pagefooter-->
+    </body>
+</html>
